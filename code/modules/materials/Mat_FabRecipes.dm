@@ -408,6 +408,25 @@
 			newObj.set_loc(getOutputLocation(owner))
 		return
 
+/datum/matfab_recipe/hose
+	name = "Hose"
+	desc = "A flexible tube for conveying fluids."
+	category = "Components"
+
+	New()
+		required_parts.Add(new/datum/matfab_part/rubber {part_name = "Hose"; required_amount = 1} ())
+		..()
+
+	build(amount, var/obj/machinery/nanofab/owner)
+		for(var/i=0, i<amount, i++)
+			var/obj/item/hose/newObj = new()
+			var/obj/item/source = getObjectByPartName("Hose")
+			if(source?.material)
+				newObj.setMaterial(source.material)
+
+			newObj.set_loc(getOutputLocation(owner))
+		return
+
 /datum/matfab_recipe/tripod
 	name = "Tripod"
 	desc = "A tripod."

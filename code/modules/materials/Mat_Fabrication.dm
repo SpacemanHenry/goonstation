@@ -31,7 +31,8 @@
 	/datum/matfab_recipe/infusion,
 	/datum/matfab_recipe/fuel_rod,
 	/datum/matfab_recipe/fuel_rod_4,
-	/datum/matfab_recipe/spacesuit)
+	/datum/matfab_recipe/spacesuit,
+	/datum/matfab_recipe/hose)
 
 /obj/machinery/nanofab/mining
 	name = "Nano-fabricator (Mining)"

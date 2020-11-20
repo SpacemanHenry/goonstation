@@ -167,6 +167,15 @@
 	flags = TABLEPASS
 	burn_possible = 0
 
+/obj/item/hose
+	name = "hose"
+	icon = 'icons/obj/items/items.dmi'
+	icon_state = "hose-1"
+	amount = 1
+	throwforce = 1
+	force = 1
+	w_class = 1
+
 /*
 /obj/item/flasks
 	name = "flask"
